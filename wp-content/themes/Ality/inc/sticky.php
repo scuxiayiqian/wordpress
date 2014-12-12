@@ -1,4 +1,5 @@
 <div id="sticky">
+	<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 	<?php
 		$args = array(
 			'posts_per_page' => get_option('cx_sticky_n'),

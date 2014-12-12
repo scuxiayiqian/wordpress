@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 <div id="primary" class="site-content">
 	<?php if ( !is_paged() ) { ?>
 		<?php if ( is_sticky() ) { ?><?php get_template_part( 'inc/sticky' ); ?><?php } ?>
