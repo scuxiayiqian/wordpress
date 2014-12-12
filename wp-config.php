@@ -21,10 +21,10 @@ define('DB_NAME', 'wordpress');
 define('DB_USER', 'root');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'incongruous');
 
 /** MySQL主机 */
-define('DB_HOST', '192.168.1.114');
+define('DB_HOST', '202.120.40.156');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
@@ -85,3 +85,9 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
+
+define("FS_METHOD","direct");
+
+define("FS_CHMOD_DIR", 0777);
+
+define("FS_CHMOD_FILE", 0777);
