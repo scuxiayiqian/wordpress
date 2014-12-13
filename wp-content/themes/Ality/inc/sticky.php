@@ -1,5 +1,4 @@
 <div id="sticky">
-	<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 	<?php
 		$args = array(
 			'posts_per_page' => get_option('cx_sticky_n'),
@@ -9,6 +8,7 @@
 		query_posts($args);
 	?>
 	<?php while (have_posts()) : the_post(); ?>
+	<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="sticky-box" onMouseOut="this.className='sticky-box'" onMouseOver="this.className='sticky-box-m'">
 			<span class="sticky-ico">荐</span>
